@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 .vscode/
 ChromeDrivers/Mac/chromedriver
+ChromeDrivers/Linux/chromedriver
+ChromeDrivers/Windows/chromedriver.exe
+Confidential/config.json
