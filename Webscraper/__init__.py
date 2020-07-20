@@ -21,6 +21,7 @@ def delay_before(delay):
         return wrapped_f
     return wrap
 
+
 def delay_after(delay):
     def wrap(f):
         def wrapped_f(*args):
@@ -60,7 +61,7 @@ class LoginClass(object):
         if os.name == 'nt':
             # path_to_chrome = str(Path('./chromedriver.exe').relative_to('.'))
             path_to_chrome = str(
-                Path('./ChromeDrivers/Windows/chromedriver.exe').absolute())
+                Path('../ChromeDrivers/Windows/chromedriver.exe').absolute())
         elif os.name == 'posix':
             path_to_chrome = str(
                 Path('./ChromeDrivers/Mac/chromedriver').absolute())
@@ -135,8 +136,3 @@ class LoginClass(object):
             if option.text in labels:
                 option.click()
                 break
-
-
-if __name__ == '__main__':
-    fetching_token = LoginClass()
-    fetching_token.logging_in('https://www.google.com')
