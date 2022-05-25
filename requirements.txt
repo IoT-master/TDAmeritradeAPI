@@ -9,7 +9,7 @@ idna==2.10
 lxml==4.5.2
 multidict==4.7.6
 pycodestyle==2.6.0
-PyJWT==1.7.1
+PyJWT==2.4.0
 requests==2.24.0
 selenium==3.141.0
 soupsieve==2.0.1
